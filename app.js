@@ -18,6 +18,7 @@ app.use('/api/auth', authRouter)
 app.use('/api/contacts', contactsRouter)
 app.use('/api/users/current', usersRouter)
 app.use('/api/users/avatars', avatarRouter)
+app.use('/api/users/verify', usersRouter)
 
 app.use((_, res) => {
   res.status(404).json({ message: 'Not found' })
